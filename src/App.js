@@ -157,7 +157,7 @@ const App = () => {
   useEffect(() => {
     checkIfWalletIsConnected();
     getMintCount();
-  }, [])
+  }, [checkIfWalletIsConnected])
 
   /*
   * We added a simple onClick event here.
