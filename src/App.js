@@ -43,7 +43,7 @@ const App = () => {
       } else {
         setShowNetworkWarning(false);
       }
-  }
+  } // eslint-disable-line react-hooks/exhaustive-deps
 
   /*
   * Implement your connectWallet method here
@@ -157,7 +157,7 @@ const App = () => {
   useEffect(() => {
     checkIfWalletIsConnected();
     getMintCount();
-  }, [])
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   /*
   * We added a simple onClick event here.
